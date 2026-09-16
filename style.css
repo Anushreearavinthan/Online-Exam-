@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f7fb;
+    color: #333;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: #1565c0;
+    color: white;
+
+    padding: 18px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.logo h2 {
+    font-size: 27px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffca28;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    height: 75vh;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.55)
+        ),
+        url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 14px 30px;
+
+    background: #ff9800;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #e68900;
+}
+
+
+/* ================= COMMON ================= */
+
+section {
+    padding: 70px 50px;
+}
+
+section h2 {
+    text-align: center;
+
+    color: #1565c0;
+
+    font-size: 32px;
+
+    margin-bottom: 40px;
+}
+
+
+/* ================= EXAMS ================= */
+
+.exam-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.exam-card {
+    width: 300px;
+
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.12);
+
+    transition: 0.3s;
+}
+
+.exam-card:hover {
+    transform: translateY(-8px);
+}
+
+.exam-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.exam-card h3 {
+    color: #1565c0;
+
+    margin-bottom: 15px;
+}
+
+.exam-card p {
+    margin: 10px 0;
+}
+
+.exam-card button {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 15px;
+
+    background: #1565c0;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.exam-card button:hover {
+    background: #0d47a1;
+}
+
+
+/* ================= INSTRUCTIONS ================= */
+
+.instructions {
+    background: #eef4fb;
+}
+
+.instruction-box {
+    max-width: 800px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.1);
+}
+
+.instruction-box ul {
+    padding-left: 25px;
+}
+
+.instruction-box li {
+    margin: 15px 0;
+
+    line-height: 1.5;
+}
+
+
+/* ================= EXAM SECTION ================= */
+
+.exam-section {
+    background: white;
+}
+
+.question-box {
+    max-width: 750px;
+
+    margin: auto;
+
+    background: #f8fafc;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.1);
+}
+
+.question-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid #ddd;
+
+    color: #1565c0;
+
+    font-weight: bold;
+}
+
+.timer {
+    color: #e53935;
+}
+
+.question-box h3 {
+    margin-bottom: 25px;
+
+    line-height: 1.5;
+}
+
+.question-box label {
+    display: block;
+
+    background: white;
+
+    padding: 15px;
+
+    margin: 10px 0;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.question-box label:hover {
+    background: #e3f2fd;
+
+    border-color: #1565c0;
+}
+
+.question-box input {
+    margin-right: 10px;
+}
+
+.exam-buttons {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 25px;
+}
+
+.exam-buttons button {
+    padding: 11px 25px;
+
+    background: #1565c0;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.exam-buttons .previous {
+    background: #777;
+}
+
+
+/* ================= LOGIN ================= */
+
+.login {
+    background: #eef4fb;
+}
+
+.login form {
+    max-width: 450px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.1);
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.login input {
+    padding: 13px;
+
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+.login button {
+    padding: 13px;
+
+    margin-top: 10px;
+
+    background: #1565c0;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.contact-container div {
+    width: 250px;
+
+    background: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 12px rgba(0,0,0,0.1);
+}
+
+.contact-container h3 {
+    color: #1565c0;
+
+    margin-bottom: 10px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #0d47a1;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 22px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+
+    .exam-card {
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+    .question-header {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .contact-container div {
+        width: 100%;
+
+        max-width: 350px;
+    }
+}
